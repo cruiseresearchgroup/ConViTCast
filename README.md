@@ -1,6 +1,6 @@
 # ConViTCast: Continuous Vision Transformer for Weather Forecasting
 
-![architecture](weather.png)
+![architecture](images/weather.png)
 
 # Requirements:
 * python=3.8
