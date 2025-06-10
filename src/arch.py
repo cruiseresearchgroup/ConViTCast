@@ -84,7 +84,7 @@ class ContinuousAttention(nn.Module):
         cross_image_attn_output = cross_image_attn_output.reshape(N, B, H, head_dim).permute(1, 2, 0, 3)  
 
         attn_output = patch_attn_output + cross_image_attn_output 
-        attn_output = patch_attn_output.permute(0, 2, 1, 3).reshape(B, N, C) 
+        attn_output = attn_output.permute(0, 2, 1, 3).reshape(B, N, C) 
         attn_output = self.out_proj(attn_output)
 
         return attn_output
