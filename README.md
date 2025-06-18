@@ -51,7 +51,7 @@ python data/regrid.py
 ```
 
 # Training
-To train STC-ViT for Global Forecasting, use
+To train ConViTCast for Global Forecasting, use
 ```python
 python train.py --config <path/to/config>
 ```
